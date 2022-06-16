@@ -1,0 +1,54 @@
+html, body, div{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ backgroundcolors for each divs 
+ instructions says touse any backgroundcolor of our choice
+*/
+
+.grid-1{
+    background-color: rgb(235, 80, 32);
+    grid-area: a; 
+}
+
+.grid-2{
+    background-color: rgb(255, 164, 1);
+    grid-area: b;
+}
+
+.grid-3{
+    background-color: rgb(5, 170, 66);
+    grid-area: c;
+}
+
+.grid-4{
+    background-color: rgb(119, 147, 180);
+    grid-area: d;
+}
+
+.grid-5{
+    background-color: rgb(119, 147, 180);
+    grid-area: e;
+}
+
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 150px 150px 130px 250px;
+    grid-auto-rows: 120px;
+    /* max-width: 800px; */
+    margin-top: 100px;
+    justify-content: center;
+    gap: 10px;
+
+    grid-template-areas: 
+    "a a a b"
+    "a a a b"
+    "c c d d"
+    "c c e e"
+    ;
+
+}
